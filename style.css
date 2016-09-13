@@ -1,0 +1,295 @@
+body{
+	background-color:black;
+	min-width: 320px !important;
+}
+
+.choose-meal-body{
+	background-color:white;
+}
+
+div.main-page{
+	height: 95% !important;
+}
+
+div.main-picture{
+	background-image: url("main-picture.jpg");
+	height: 700px;
+}
+
+div.main-holder-cm{
+	margin-top:-40px;
+}
+
+.page-gathering{
+	background-image: url("gathering.jpg");
+	/*height: 700px;*/
+}
+
+img.wellcome_picture{
+	width:100%;
+}
+
+img.title-cm{
+	width:320px;
+	height:100px;
+	float:left;
+}
+
+
+img.title{
+	width:324px;
+	height:324px;
+	margin-top:80px;
+}
+
+img.join-mobile{
+	display:none;
+}
+
+div.row{
+	margin-top: 40px;
+}
+
+a.btn-main{
+	width:300px;
+}
+
+img.top-picks{
+	width:250px;
+	height:150px
+}
+
+img.secundary-picks{
+	width:180px;
+	height:90px
+}
+
+a.recipe-title{
+	color: #353A3B;
+    text-decoration: none;
+}
+
+input.search-cm{
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    float:left;
+    margin-top: 20px;
+    margin-left: -130px;
+}
+
+input.search-cm:focus{
+	width:100%;
+}
+
+
+
+img.image-ingredients{
+	width: 485.71px;
+    height: 584.2px;
+}
+
+div.timer{
+	width: 250px;
+    background-color: black;
+    height: 70px;
+    border-radius: 15px;
+}
+
+div.timer h4{
+	color: #33ccff;
+    font-size: 40px;
+    margin: 0px 0px 0px 30px;
+    padding-top: 10px;
+}
+
+li.done-first-list{
+	font-size: 17px;
+}
+
+div.lets-do-it{
+	background-color: red;
+    width: 250px;
+    height: 100px;
+    border-radius: 45px;
+}
+
+div.lets-do-it h4{
+	color: #33ccff;
+    font-size: 60px;
+    margin: 0px 0px 0px 50px;
+    padding-top: 10px;
+}
+
+input.h-people{
+	idth: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    float:right;
+    margin-top: 20px;
+    margin-left: -130px;
+}
+
+input.h-people:focus{
+	width:55%;
+}
+
+h1.h-people-title{
+	float:left;
+	width:600px !important;
+	height:50px;
+}
+
+button.last-step-venmmo{
+	/*width:250px;
+	height: 250px;
+	border-radius: 45px;*/
+	background-image: url("images/venmmo.png");
+	 background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+	/*padding-top: 35px;*/
+}
+
+button.last-step-ingredients{
+	/*width:250px;
+	height: 250px;
+	border-radius: 45px;*/
+	background-image: url("images/ingredients.jpg");
+	 background-position: 10px 10px;
+    background-repeat: repeat-x;
+    background-size: 60px 30px;
+	/*padding-top: 35px;*/
+}
+
+button.btn-info{
+	width: 200px;
+	height: 50px;
+
+}
+
+button.btn-success{
+	width: 200px;
+	height: 50px;
+
+}
+
+div.third-step{
+	margin-top:40px; 
+	padding-bottom:20px; 
+	padding-top:20px; 
+}
+
+.btn-danger{
+	width:300px;
+}
+
+div.sec-step{
+	margin-top:40px; 
+	padding-bottom:20px; 
+}
+
+.last-step{
+	background-color: white;
+}
+
+/*div.last-step-button{
+	background-color: black;
+	width:300px;
+	height: 300px;
+	border-radius: 45px;
+}*/
+
+@media (max-width: 645px) { 
+
+	img.join-main{
+		display:none;
+	}	
+	img.join-mobile{
+		display:inline;
+	}
+	input.search-cm{
+		float:clear;
+		margin-top:0px;
+   		margin-left:0px;
+	}
+
+	.last-step{
+		width: 420px;
+	}
+}
+
+@media (max-width: 400px) { 
+
+	img.secundary-picks{
+		width:90px;
+		height:45px
+	}
+
+	.last-step{
+		width: 320px;
+	}
+
+	.btn-danger{
+		width:100px;
+	}
+
+	h1.h-people-title{
+		float:left;
+		width:330px !important;
+		font-size:30px;
+		/*height:50px;*/
+	}
+
+	input.h-people{
+		margin-top: 0px;
+		width:100%;
+	}
+
+	input.h-people:focus{
+		width:100%;
+	}
+
+	.first-step{
+		height: 150px;
+	}
+
+	img.image-recipe{
+		width:310px;
+		height:180px;
+	}
+
+	img.image-ingredients{
+		width:310px;
+		height:404px;
+	}
+
+	h3.prep_time{
+		font-size:30px;
+	}
+
+	div.row{
+		margin-top: 0px;
+	}
+}
+
+

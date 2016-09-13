@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Lets eat</title>
+
+    <!-- Bootstrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="choose-meal-body">
+
+      <!-- Navegation-->
+      <div class="navbar-wrapper">
+        <div class"container">
+
+          <nav id="nav" class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Lets Eat</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#portf-container">Loggin <span class="sr-only">(current)</span></a></li>
+                <li><a href="#resumen-container">Settings</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        </div>
+      </div>
+      <!--END OF navegation -->
+
+     <div class="container main-holder-cm">
+
+        <div class="header-cm">
+          <div class="row">
+            <div class="col-lg-4">
+                 <img class="title-cm" src="choose_a_meal.jpg"/>
+            </div>
+            <div class="col-lg-8">
+              <form class="form-cm">
+                <input id="name" class="search-cm" type="text" name="search" onkeyup="getRecipes(document.getElementById('name').value)" placeholder="Search..">
+
+              </form>     
+            </div>
+          </div>
+        </div>
+
+    </div>
+     <!-- </div> -->
+
+        <!-- <div id="recipes"></div> -->
+        <script>//<![CDATA[
+//       var cities=["Alpine","Altamont","Alton","Altonah","American Fork","Aneth","Annabella","Antimony","Aurora","Axtell","Bear River City","Beaver","Beryl","Bicknell","Bingham Canyon","Blanding"];function getCities(prefix){console.log("key press");console.log(prefix);var cityList=document.getElementById('cities');var inner="<ul>";for(city in cities){if(cities[city].startsWith(prefix)){inner+="<li>"+cities[city]+"</li>";}}
+//       inner+="</ul>";cityList.innerHTML=inner;}
+// //]]></script>
+
+     <div class="container lower-body"><!--CONTAINER AROUND PORTAFOLIO, CONTENT AND CONTACT-->
+     <div id="search-result" class="center-block"></div>
+     <hr class="featurette-divider"><!--====================================-->
+      <div> 
+        <h2>Top picks</h2>
+        <div class="row">
+
+          <a class="pick-meal-link" href="orange-chicken.html">
+             <div class="col-lg-3">
+              <img class="top-picks" src="images/orange-chicken.jpg" alt="Orange chicken">
+              <h3 class="title">
+                <a class="recipe-title">Orange Chicken</a>
+              </h3> 
+            </div>
+          </a>
+         
+         <a class="pick-meal-link" href="orange-chicken.html">
+            <div class="col-lg-3">
+              <img class="top-picks" src="images/noodles.jpg" alt="Noodles">
+              <h3 class="title">
+                <a class="recipe-title">Thai Noodles</a>
+              </h3>
+            </div>
+          </a>
+
+          <a class="pick-meal-link" href="orange-chicken.html">
+            <div class="col-lg-3">
+              <img class="top-picks" src="images/pita.jpg" alt="Pita">
+              <h3 class="title">
+                <a class="recipe-title">Thai Beef Pitas</a>
+              </h3>
+            </div>
+          </a>
+
+          <a class="pick-meal-link" href="orange-chicken.html">
+            <div class="col-lg-3">
+              <img class="top-picks" src="images/soup.jpg" alt="soup">
+              <h3 class="title">
+                <a class="recipe-title">Tom Kha Gai</a>
+              </h3>            
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+
+      <hr class="featurette-divider"><!--====================================-->
+
+      <!-- <div>  -->
+        <h2>Recipes</h2>
+        <div class="row">
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/orange-chicken.jpg" alt="Orange chicken">
+            <h5 class="title">
+              <a class="recipe-title">Orange Chicken</a>
+            </h5> 
+          </div>
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/noodles.jpg" alt="Noodles">
+            <h5 class="title">
+              <a class="recipe-title">Thai Noodles</a>
+            </h5> 
+            
+          </div>
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/pita.jpg" alt="Pita">
+            <h5 class="title">
+              <a class="recipe-title">Thai Beef Pitas</a>
+            </h5> 
+            
+          </div>
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/soup.jpg" alt="soup">
+            <h5 class="title">
+              <a class="recipe-title">Tom Kha Gai</a>
+            </h5>            
+          </div>
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/pita.jpg" alt="Pita">
+            <h5 class="title">
+              <a class="recipe-title">Thai Beef Pitas</a>
+            </h5> 
+            
+          </div>
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/soup.jpg" alt="soup">
+            <h5 class="title">
+              <a class="recipe-title">Tom Kha Gai</a>
+            </h5>            
+          </div>
+        </div>
+      <!-- </div> -->
+      <div class="row">
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/orange-chicken.jpg" alt="Orange chicken">
+            <h5 class="title">
+              <a class="recipe-title">Orange Chicken</a>
+            </h5> 
+          </div>
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/noodles.jpg" alt="Noodles">
+            <h5 class="title">
+              <a class="recipe-title">Thai Noodles</a>
+            </h5> 
+            
+          </div>
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/pita.jpg" alt="Pita">
+            <h5 class="title">
+              <a class="recipe-title">Thai Beef Pitas</a>
+            </h5> 
+            
+          </div>
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/soup.jpg" alt="soup">
+            <h5 class="title">
+              <a class="recipe-title">Tom Kha Gai</a>
+            </h5>            
+          </div>
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/pita.jpg" alt="Pita">
+            <h5 class="title">
+              <a class="recipe-title">Thai Beef Pitas</a>
+            </h5> 
+            
+          </div>
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/soup.jpg" alt="soup">
+            <h5 class="title">
+              <a class="recipe-title">Tom Kha Gai</a>
+            </h5>            
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/orange-chicken.jpg" alt="Orange chicken">
+            <h5 class="title">
+              <a class="recipe-title">Orange Chicken</a>
+            </h5> 
+          </div>
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/noodles.jpg" alt="Noodles">
+            <h5 class="title">
+              <a class="recipe-title">Thai Noodles</a>
+            </h5> 
+            
+          </div>
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/pita.jpg" alt="Pita">
+            <h5 class="title">
+              <a class="recipe-title">Thai Beef Pitas</a>
+            </h5> 
+            
+          </div>
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/soup.jpg" alt="soup">
+            <h5 class="title">
+              <a class="recipe-title">Tom Kha Gai</a>
+            </h5>            
+          </div>
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/pita.jpg" alt="Pita">
+            <h5 class="title">
+              <a class="recipe-title">Thai Beef Pitas</a>
+            </h5> 
+            
+          </div>
+          <div class="col-lg-2">
+            <img class="secundary-picks" src="images/soup.jpg" alt="soup">
+            <h5 class="title">
+              <a class="recipe-title">Tom Kha Gai</a>
+            </h5>            
+          </div>
+        </div>
+
+    </div><!-- /.container -->
+
+   
+     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
